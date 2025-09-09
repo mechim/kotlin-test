@@ -2,7 +2,7 @@ import retrofit2.http.GET
 import retrofit2.http.Query
 
 interface WeatherAPIService {
-    @GET("/forecast.json")
+    @GET("forecast.json")
     suspend fun getForecast(
         @Query("q") city: String,
         @Query("days") days: Int=1,
